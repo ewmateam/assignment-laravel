@@ -25,4 +25,11 @@ class PostTest extends TestCase
             $this->fail("Log::info is not being called on Post creation");
         }
     }
+
+    public function test_can_load_without_any_relations()
+    {
+        factory(Post::class)->create();
+        $model = Post::query()->first();
+        $this->assertEmpty($model->getRelations(), "The Post model may not force load any relations by default");
+    }
 }
