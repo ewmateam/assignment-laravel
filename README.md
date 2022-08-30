@@ -1,6 +1,9 @@
 # Laravel Coding Assignment
-Welcome to the Laravel coding assignment. 
+![PHP 7.3+](https://img.shields.io/badge/PHP-7.3%2B-informational?style=flat-square)
+![Laravel 7.0](https://img.shields.io/badge/Laravel-7.0%2B-informational?style=flat-square)
+[![License Unlicense](https://img.shields.io/badge/License-The%20Unlicense-informational?style=flat-square)](LICENSE)
 
+Welcome to the Laravel coding assignment. 
 ## Overview
 This project is an oversimplified sample of how a micro-blog works.
 There are two models:
@@ -48,3 +51,6 @@ $analyzer::send(["some-key"=> "some-value"]);
 ### Hints & Bonuses
 - Refer to the architecture concepts in [Laravel documentation](https://laravel.com/docs/7.x/)
 - You are free to use your knowledge of SOLID and implement the design pattern of your choice. Bonus points are awarded if your choice of implementation resembles the common practices in Laravel.
+
+## License
+This project is dedicated to the public domain, you may do as you please with the code available in this project. The derivative work you may create is yours to release. See [LICENSE](LICENSE) for more information.
