@@ -11,7 +11,7 @@ class FeedController extends Controller
     {
         /** START CODING HERE */
         $posts = Post::query()->paginate();
-        /** STOP CODING HERE */
         return response(FeedResource::collection($posts));
+        /** STOP CODING HERE */
     }
 }
