@@ -9,9 +9,10 @@ class FeedController extends Controller
 {
     public function __invoke()
     {
+        $posts = Post::query()->get();
         /** START CODING HERE */
-        $posts = Post::query()->paginate();
-        return response(FeedResource::collection($posts));
+        
         /** STOP CODING HERE */
+        return response(FeedResource::collection($posts));
     }
 }
