@@ -53,4 +53,4 @@ $analyzer::send(["some-key"=> "some-value"]);
 - You are free to use your knowledge of SOLID and implement the design pattern of your choice. Bonus points are awarded if your choice of implementation resembles the common practices in Laravel.
 
 ## License
-This project is dedicated to the public domain, you may do as you please with the code available in this project. The derivative work you may create is yours to release. See [LICENSE](LICENSE) for more information.
+This project is available under The Unlicense, see the full [LICENSE](LICENSE) for more information.
