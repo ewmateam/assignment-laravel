@@ -1,7 +1,7 @@
 <?php
 namespace App\Contracts; 
 
-interface Analyzer
+interface AnalyzerDriver
 {
     public function send(array $data): bool;
 }

@@ -27,29 +27,20 @@ We would also like to see how you would implement a system from scratch.
 
 We have found that our micro-blog project needs to send analysis data to various systems.
 
-For example, this system could
-- send an HTTP request to "internal-analyzer.local"
-- send the data to a redis server
-- store the data inside a mysql server
-- simply add the analysis to its internal array 
-In Laravel, these systems are usually called "drivers". 
-
 For this assignment, we need you to:
-- Write a concrete implementation of `app/Contracts/Analyzer.php`
-- Configure the service container such that `app()->make(Analyzer::class)` resolves to your implementation.
-- Write a mock driver for your system which simply stores the value given inside an internal array.
-- Write a few tests to demonstrate your ability in writing feature and unit tests
+- Write a concrete implementation of `app/Contracts/AnalyzerDriver.php`
+- Write a mock driver for your system which simply stores the value given inside an internal array. You do not need to save this array.
+- Write a facade responsible for switching between drivers and getting called
 
 ### Usage
 ```php
-use App\Contracts\Analyzer;
+use App\Facades\AnalyzerFacade;
 // [...]
-$analyzer = app(Analyzer::class);
-$analyzer::send(["some-key"=> "some-value"]);
+AnalyzerFacade::send(["some-key"=> "some-value"]);
 ```
 
 ### Hints & Bonuses
-- Refer to the architecture concepts in [Laravel documentation](https://laravel.com/docs/7.x/)
+- Refer to the architecture concepts in [Laravel documentation](https://laravel.com/docs/7.x/) such as the Facade documentation
 - You are free to use your knowledge of SOLID and implement the design pattern of your choice. Bonus points are awarded if your choice of implementation resembles the common practices in Laravel.
 
 ## License
