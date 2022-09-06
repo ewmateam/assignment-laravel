@@ -16,6 +16,8 @@ Currently, multiple RESTful APIs are provided:
 
 
 ## Tasks
+You will have two categories of assignments for this interview: Maintenance Tasks, and Writing your own Analyzer.
+
 ### Maintenance Tasks
 The following tasks are a sample of what maintenance tasks in a Laravel project look like, complete the following tasks based on the Laravel best practices:
 
